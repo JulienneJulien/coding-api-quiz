@@ -5,16 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web APIs: Code Quiz</title>
-    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./Assets/Css/style.css">
 </head>
+<!-- HEADER -->
 <body>
-    <header>
+    <div><a href="#scores">View Highscores</a>
+    <p id="timer">Timer: 0 </p>
+    </div>
+
+    <div class="containerbox">
+        <header class="intro">
         <h1>Code Challenge Quiz</h1>
-    </header>
+        <p>Welcome to my coding quiz! This quiz includes some code-related questions.
+            Please answer as many as you quickly can to receive a HIGH SCORE! 
+            As a reminder, any incorrect responses will result in time being 
+            subtracted from the timer clock.
+        </p>
+        <button class="buttons">Start Quiz Now</button>
+        </header>
+    </div>
+<!-- MAIN QUESTIONNAIRE SECTION -->
+<main>
+    <section id="codequestions" class="hidden-default">
+        <h2 id="questions-title"></h2>
+        <div id="options" class="options"></div>
+    </section>
     
+    <section id="completed-quiz" class="hidden-default">
+        <h2>You are Done!</h2>
+        <p>Quiz Final Score: 00</p>
+        <form>
+            <label for="">Your Initials:</label>
+            <input type="text" id="initials" max="3" />
+            <input type="Submit" class="buttons">
+        </form>
+    </section>
+    
+    <section>
+        <p id="quiz-feedback" class="feedback-hidden-default"></p>
+    </section>
 
-
-
+    <section id="quiz-highscores" class="hidden-default">
+        <h2>Highscores</h2>
+        <ol>
+            <li>fgfgf</li>
+            <li>fgfgf</li>
+            <li>fgfgf</li>
+        </ol>
+        <button class="buttons">Go Back</button>
+        <button class="buttons">Clear Highscores</button>
+    </section>
+</main>
 
     <script src="./Js/script.js"></script>
 </body>
