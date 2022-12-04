@@ -9,54 +9,39 @@
 </head>
 <!-- HEADER -->
 <body>
-    <div><a href="#scores">View Highscores</a>
-    <p id="timer">Timer: 0 </p>
-    </div>
+    <div class="scores"><a href="scores.html">View Highscores</a></div>
+    <div class="timer" id="time">Timer:00</div>
 
     <div class="containerbox">
-        <header class="intro">
+        <header id="begin-screen"  class="intro">
         <h1>Code Challenge Quiz</h1>
-        <p>Welcome to my coding quiz! This quiz includes some code-related questions.
-            Please answer as many as you quickly can to receive a HIGH SCORE! 
+        <p>Welcome to my coding quiz! This quiz includes HTML/JAVASCRIPT/CSS-related questions.
+            You have 80 seconds to answer all  Please answer as many as you quickly can to receive a HIGH SCORE! 
             As a reminder, any incorrect responses will result in time being 
             subtracted from the timer clock.
         </p>
-        <button class="buttons">Start Quiz Now</button>
+        <button id="begin">Start Quiz Now</button>
         </header>
-    </div>
+    
 <!-- MAIN QUESTIONNAIRE SECTION -->
 <main>
-    <section id="codequestions" class="hidden-default">
+        <section id="codequestions" class="hidden-default">
         <h2 id="questions-title"></h2>
         <div id="options" class="options"></div>
-    </section>
+        </section>
     
-    <section id="completed-quiz" class="hidden-default">
+        <section id="completed-quiz" class="hidden-default">
         <h2>You are Done!</h2>
-        <p>Quiz Final Score: 00</p>
+        <p>Quiz Final Score: <div id="final-score"></div>.</p>
         <form>
-            <label for="">Your Initials:</label>
-            <input type="text" id="initials" max="3" />
-            <input type="Submit" class="buttons">
+            <label for="">Your Initials: <input type="text" id="initials" max="3" /></label>
+            <button id="submit" class="otherbutton" >Submit</button>
         </form>
-    </section>
-    
-    <section>
-        <p id="quiz-feedback" class="feedback-hidden-default"></p>
-    </section>
+        </section>
 
-    <section id="quiz-highscores" class="hidden-default">
-        <h2>Highscores</h2>
-        <ol>
-            <li>fgfgf</li>
-            <li>fgfgf</li>
-            <li>fgfgf</li>
-        </ol>
-        <button class="buttons">Go Back</button>
-        <button class="buttons">Clear Highscores</button>
-    </section>
-</main>
+        <div id="quiz-feedback" class="quiz-feedback hidden-default"></id=></div>
+    </div>    
 
-    <script src="./Js/script.js"></script>
+    <script src="./Assets/Js/script.js"></script>
 </body>
 </html>
