@@ -10,3 +10,11 @@
 
 
 ## Visuals
+<img src="./Assets/Images/Animation.gif">
+
+<img src="./Assets/Images/Screenshot_20221204_045136.png">
+<img src="./Assets/Images/Screenshot_20221204_045154.png">
+<img src="./Assets/Images/Screenshot_20221204_052402.png">
+<img src="./Assets/Images/Screenshot_20221204_052845.png">
+
+
